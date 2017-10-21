@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <title>Train Interface</title>
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Css Link -->
+  <link rel="stylesheet" href="assets/styles.css">
+  <!-- Firebase Link -->
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+  <!-- Jquery Link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <!-- Moment.js Link -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Logic File Link -->
+  <script type="text/javascript" src= "assets/logic.js"></script>
+</head>
+<body>
+  <h1>Train Times</h1>
+  <div class= 'panel panel-info'>
+	<div class= 'panel-heading'>Trains</div>
+	  <div class='panel-body'>
+		<table class='table table-bordered' id='trainData'>
+		    <tr>
+            </tr>
+		</table>
+	</div>
+  </div>
+  <div class= 'panel panel-info'>
+  	<div class="panel-heading">New Trains</div>
+  	<form id= "trains">
+  		<input type="text" id="trainName">
+  		<input type="text" id="trainDestination">
+  		<input type="text" id="firstTrain">
+  		<input type="text" id="Duration">
+      <input type="submit" id="subTrain">
+  	</form>
+  </div>
+</body>
+</html>
